@@ -11,5 +11,7 @@ namespace PracticaWebAPI.Models
         }
 
         public DbSet<libro> libros { get; set; }
+
+        public DbSet<autor> autor { get; set; }
     }
 }
