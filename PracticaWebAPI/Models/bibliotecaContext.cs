@@ -9,5 +9,7 @@ namespace PracticaWebAPI.Models
         {
         
         }
+
+        public DbSet<libro> libros { get; set; }
     }
 }
