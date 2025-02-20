@@ -1,17 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace PracticaWebAPI.Models
 {
-    public class bibliotecaContext:DbContext   
+    public class bibliotecaContext : DbContext
     {
-        public bibliotecaContext(DbContextOptions<bibliotecaContext> options) : base (options) 
-        {
-        
-        }
+        public bibliotecaContext(DbContextOptions<bibliotecaContext> options) : base(options) { }
 
-        public DbSet<libro> libros { get; set; }
-
-        public DbSet<autor> autor { get; set; }
+        public DbSet<Autor> Autores { get; set; }
+        public DbSet<Libro> Libros { get; set; }
     }
 }
